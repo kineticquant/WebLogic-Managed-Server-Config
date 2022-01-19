@@ -15,6 +15,7 @@ The scripts can either be hard-coded to have the credentials in them or they wil
 
 ## Troubleshooting connection method
 If the method below is not prompting for credentials, simply replace the whole thing with the comment out "connect()" line and see if WLST initiates the credential prompt.<br><br>
+```
 console = System.console()
 uname = raw_input("Weblogic username (weblogic): ")
 if uname == "":
@@ -24,3 +25,4 @@ url = raw_input("Enter AdminServer url (t3://localhost:7001): ")
 if url == "":
     url = "t3://localhost:7001"
 connect(uname, pw, url)
+```
