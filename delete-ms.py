@@ -16,7 +16,17 @@ from java.lang import String
 
 # Script can also prompt for credentials by just passing connect() method to prevent hard-coding the credentials
 #connect(wls_user, wls_pass, wls_url)
-connect()
+#connect()
+# This connection method below will accept the WebLogic defaults simply by pressing enter.
+console = System.console()
+uname = raw_input("Weblogic username (weblogic): ")
+if uname == "":
+    uname = "weblogic"
+pw = "".join(java.lang.System.console().readPassword("%s", ["Password for %s: " % uname]))
+url = raw_input("Enter AdminServer url (t3://localhost:7001): ")
+if url == "":
+    url = "t3://localhost:7001"
+connect(uname, pw, url)
 
 cd('/')
 
