@@ -14,7 +14,7 @@ The scripts can either be hard-coded to have the credentials in them or they wil
 
 
 ## Troubleshooting connection method
-If the method below is not prompting for credentials, simply replace the whole thing with the comment out "connect()" line and see if WLST initiates the credential prompt.
+If the method below is not prompting for credentials, simply replace the whole thing with the comment out "connect()" line and see if WLST initiates the credential prompt.<br><br>
 console = System.console()
 uname = raw_input("Weblogic username (weblogic): ")
 if uname == "":
