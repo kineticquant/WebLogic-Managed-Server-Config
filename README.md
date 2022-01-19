@@ -12,9 +12,8 @@ Change the full path to your full path for the script and the script name to mat
 The scripts can either be hard-coded to have the credentials in them or they will prompt for connection info at launch.
 
 
-
 ## Troubleshooting connection method
-If the method below is not prompting for credentials, simply replace the whole thing with the comment out "connect()" line and see if WLST initiates the credential prompt.<br><br>
+If the method below is not prompting for credentials, simply replace the whole thing with the comment out "connect()" line and see if WLST initiates the credential prompt.<br>
 ```
 console = System.console()
 uname = raw_input("Weblogic username (weblogic): ")
