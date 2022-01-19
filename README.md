@@ -12,6 +12,16 @@ Change the full path to your full path for the script and the script name to mat
 The scripts can either be hard-coded to have the credentials in them or they will prompt for connection info at launch.
 
 
+## Create script configuration
+The creation script for managed servers has variables for a massive amount of configuration. Most deployments do not need that much configuration so it can be stripped down and modified to only include minor details.
+
+For the creation script, you need to:
+1) Ensure you replace the values with what you need to match your environment.
+2) Change the roleName. roleName is defined as the actual role that will be placed in the security realm.
+3) This script enables SSL by default - you will need to return and attach the keystore in the SSL configuration settings.
+4) You will need to define a user that belongs to the role that can connect across multiple builds if you use the adapter configuration settings. This is not necessary if you strip this script down to just building managed servers using the properties file.
+
+
 ## Troubleshooting connection method
 If the method below is not prompting for credentials, simply replace the whole thing with the comment out "connect()" line and see if WLST initiates the credential prompt.<br>
 ```
