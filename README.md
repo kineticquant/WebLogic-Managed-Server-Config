@@ -23,7 +23,7 @@ For the creation script, you need to:
 
 
 ## Troubleshooting connection method
-If the method below is not prompting for credentials, simply replace the whole thing with the comment out "connect()" line and see if WLST initiates the credential prompt.<br>
+If the method below is not prompting for credentials, simply replace the whole thing with the commented out "connect()" line and see if WLST initiates the credential prompt.<br>
 ```
 console = System.console()
 uname = raw_input("Weblogic username (weblogic): ")
