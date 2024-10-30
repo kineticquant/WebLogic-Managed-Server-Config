@@ -1,6 +1,5 @@
 # WebLogic-Managed-Server-Build
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
-
 Python scripts to create, modify, and delete WebLogic managed servers automatically.
 
 ## How to use
